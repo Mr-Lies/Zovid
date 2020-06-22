@@ -148,7 +148,7 @@ function update() {
     }
     // Show an alert modal when score reaches 120
     if (score === 120) {
-        location.href = '../../../L3/docs/index.html'
+        location.href = '../../L3/docs/index.html'
     }
 }
 
