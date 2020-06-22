@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(7, 7, 56);
+}
+
+#game {
+    background-image: url(../style/images/parkour.jpg);
+    width: 1000px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+#character {
+    background-image: url(../style/images/zombie11.png);
+    width: 45px;
+    height: 87px;
+    top: 480px;
+    left: 150px;
+    position: relative;
+    background-size: contain;
+}
+
+.animate {
+    animation: jump 1s;
+}
+
+@keyframes jump {
+    0% {
+        top: 480px;
+    }
+    30% {
+        top: 330px
+    }
+    70% {
+        top: 330px;
+    }
+    100% {
+        top: 480px;
+    }
+}
+
+#enemy {
+    background-image: url(../style/images/enemy.png);
+    width: 45px;
+    height: 87px;
+    top: 393px;
+    left: 600px;
+    position: relative;
+    background-size: contain;
+    animation: enemy 1s infinite linear;
+}
+
+@keyframes enemy {
+    0% {
+        left: 950px;
+    }
+    100% {
+        left: -40px;
+    }
+}
+
+h3 {
+    color: white;
+}
+
+#score {
+    width: 1000px;
+    height: 600px;
+    color: white;
+}
+
+.home {
+    min-height: 100vh;
+    background-image: url("images/achtergrond.png");
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+}
+
+.home .full-screen {
+    min-height: 100vh;
+}
+
+.home .home-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.home .home-content .block {
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding-left: 430px;
+    margin-top: 70px;
+}
+
+.home .home-content .block h6 {
+    color: rebeccapurple;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 140px;
+    padding-left: 150px;
+}
+
+.home .home-content .block h1 {
+    color: rebeccapurple;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.home .home-content .block h3 {
+    color: #008000;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 150px;
+    padding-right: 450px;
+}
+
+.home .home-content .block .button {
+    padding-top: 20px;
+    padding-left: 250px;
+}
+
+.home .home-content .block .button a {
+    border-radius: 4px;
+    color: rebeccapurple;
+    border: 1px solid rebeccapurple;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: transparent;
+}
+
+.home .home-content .block .button a:hover {
+    background-color: rebeccapurple;
+    color: #ffffff;
+}
+
+
+/* fail page */
+
+.fail {
+    min-height: 100vh;
+    background-image: url("images/achtergrond.png");
+}
+
+.fail .full-screen {
+    min-height: 100vh;
+}
+
+.fail .fail-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.fail .fail-content .block {
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding-left: 500px;
+    margin-top: 70px;
+}
+
+.fail .fail-content .block h1 {
+    color: rebeccapurple;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 150px;
+    padding-left: 20px;
+}
+
+.fail .fail-content .block h3 {
+    color: #008000;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0;
+    padding-right: 650px;
+}
+
+.fail .fail-content .block .button-retry {
+    padding-top: 20px;
+    padding-left: 160px;
+}
+
+.fail .fail-content .block .button-retry a {
+    border-radius: 4px;
+    color: rebeccapurple;
+    border: 1px solid rebeccapurple;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: transparent;
+}
+
+.fail .fail-content .block .button-retry a:hover {
+    background-color: rebeccapurple;
+    color: #ffffff;
+}
+
+
+/* pass page */
+
+.pass {
+    min-height: 100vh;
+    background-image: url("images/achtergrond.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.pass .full-screen {
+    min-height: 100vh;
+}
+
+.pass .pass-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.pass .pass-content .block {
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding-left: 500px;
+    margin-top: 70px;
+}
+
+.pass .pass-content .block h1 {
+    color: rebeccapurple;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 150px;
+    padding-left: 100px;
+}
+
+.pass .pass-content .block h3 {
+    color: #008000;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    padding-right: 675px;
+}
+
+.pass .pass-content .block .button-next {
+    padding-top: 20px;
+    padding-left: 165px;
+}
+
+.pass .pass-content .block .button-next a {
+    border-radius: 4px;
+    color: rebeccapurple;
+    border: 1px solid rebeccapurple;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: transparent;
+}
+
+.pass .pass-content .block .button-next a:hover {
+    background-color: rebeccapurple;
+    color: #ffffff;
+}
