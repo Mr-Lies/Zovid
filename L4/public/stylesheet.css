@@ -1,0 +1,28 @@
+body {
+    color: chartreuse;
+    background-color: #ffbf00;
+    margin: auto;
+    text-align: center;
+    background-image: url("..\..\L3\docs\media\Bld.png");
+}
+
+.button {
+    background-color: rebeccapurple;
+    border: none;
+    color: chartreuse;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.message {
+    background-color: rgb(7, 7, 56);
+    margin: auto;
+}
+
+.guide {
+    margin: auto;
+    color: rgb(255, 255, 255);
+}
