@@ -127,7 +127,7 @@ function update() {
     // Call touchEnemy() if player overlaps with an enemy 
     game.physics.arcade.collide(player, enemy, platforms, () => {
         console.log("hit")
-        location.href = '../../../index.html'
+        location.href = '../../index.html'
     }, null, this)
 
     // Configure the controls!
