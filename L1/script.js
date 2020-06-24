@@ -23,7 +23,7 @@ var checkDead = setInterval(function(){
         score++
         scoreDisplay.innerHTML = score
 
-        if (score >= 2900){
+        if (score >= 2100){
             setTimeout(function(){location.replace("pass.html");});
         }
     }
