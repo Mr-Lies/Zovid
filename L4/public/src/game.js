@@ -15,7 +15,7 @@ let enemy
 
 function preload() {
 
-    game.load.image('sky', './assets/background.png')
+    game.load.image('sky', './assets/WP.jpg')
     game.load.image('ground', './assets/platform.png')
     game.load.image('diamond', './assets/enemy.png')
     game.load.spritesheet('woof', './assets/woof.png', 1000, 100)
